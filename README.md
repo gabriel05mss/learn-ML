@@ -3,6 +3,7 @@ aprendizado de algoritmos de aprendizado de maquina
 ## Sumário
 - [Regras de associação](#Regras-de-associação)
   - [Apriori](#Apriori)
+  - [ECLAT](#ECLAT)
 ## Regras de associação
 ### Apriori
 O objetivo principal do Apriori é encontrar itens frequentemente comprados juntos e usar esses padrões para gerar regras de associação, que indicam as relações entre os itens. Essas regras são expressas na forma "se X, então Y", onde X e Y são conjuntos de itens.
@@ -38,4 +39,9 @@ Se Lift(X=>Y) ≤1, então NÃO é provável que Y seja comprado, caso X seja co
 [Back to sumário](#Sumário)
 
 ### ECLAT
+Ele tem como objetivo identificar padrões frequentes (itemsets frequentes) em grandes bases de dados, mas de uma forma mais eficiente que o Apriori, especialmente quando se lida com grandes conjuntos de dados.
+
+não cria regras de associação, mas apenas itemsets.
+
+[Back to sumário](#Sumário)
 ### CHARM
