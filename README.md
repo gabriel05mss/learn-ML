@@ -37,7 +37,5 @@ Se Lift(X=>Y) ≤1, então NÃO é provável que Y seja comprado, caso X seja co
 
 [Back to sumário](#Sumário)
 
-### FP-growth
 ### ECLAT
-### AIS
 ### CHARM
