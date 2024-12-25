@@ -4,6 +4,7 @@ aprendizado de algoritmos de aprendizado de maquina
 - [Regras de associação](#Regras-de-associação)
   - [Apriori](#Apriori)
   - [ECLAT](#ECLAT)
+- [Clusterização](#Clusterização)
 ## Regras de associação
 ### Apriori
 O objetivo principal do Apriori é encontrar itens frequentemente comprados juntos e usar esses padrões para gerar regras de associação, que indicam as relações entre os itens. Essas regras são expressas na forma "se X, então Y", onde X e Y são conjuntos de itens.
@@ -44,4 +45,10 @@ Ele tem como objetivo identificar padrões frequentes (itemsets frequentes) em g
 não cria regras de associação, mas apenas itemsets.
 
 [Back to sumário](#Sumário)
-### CHARM
+
+## Clusterização
+### K-means
+### Fuzzy c-means
+### K-medoids
+### DBSCAN
+### Hierárquico
