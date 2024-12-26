@@ -83,4 +83,4 @@ plot(previsao)
 ####
 library(cluster)
 clusplot(vinho,previsao, color = T, lines = F, labels = 5)
-table(vinho$Tipo,previsao)
+
