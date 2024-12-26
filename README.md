@@ -2,9 +2,14 @@
 aprendizado de algoritmos de aprendizado de maquina
 ## Sumário
 - [Regras de associação](#Regras-de-associação)
+  
   - [Apriori](#Apriori)
+    
   - [ECLAT](#ECLAT)
+    
 - [Clusterização](#Clusterização)
+  
+    -[K-means](K-means)
 ## Regras de associação
 ### Apriori
 O objetivo principal do Apriori é encontrar itens frequentemente comprados juntos e usar esses padrões para gerar regras de associação, que indicam as relações entre os itens. Essas regras são expressas na forma "se X, então Y", onde X e Y são conjuntos de itens.
@@ -48,6 +53,9 @@ não cria regras de associação, mas apenas itemsets.
 
 ## Clusterização
 ### K-means
+Este é um dos mais simples e mais rápidos métodos de Clustering. Ele tenta separar os dados em K (um número predefinido) clusters, de acordo com a distância de cada ponto até algo chamado de centroide. Um centroide é como um protótipo para um cluster. Na maioria das técnicas, K pontos aleatórios do dataset são escolhidos para serem as coordenadas dos centroides iniciais. Então cada instância desses dados é atribuída ao centroide mais próximo. Nas demais iterações a posição dos centroides é calculada através da distancia média entre todos os pontos atribuídos àquele centroide na última iteração. O algoritmo termina quando a posição dos centroides não é mais modificada ou a distancia dessa mudança é menor que um threshold predefinido.
+
+[Back to sumário](#Sumário)
 ### Fuzzy c-means
 ### K-medoids
 ### DBSCAN
