@@ -61,3 +61,26 @@ c4=qplot(1:10, tws, geom=c("point", "line"),
   theme_bw()
 
 grid.arrange(c3, c4, ncol=2)
+####
+
+#### Executando k-means com k=3
+
+vinho_k3 = kmeans(vinho1, centers=3)
+
+previsao = vinho_k3$cluster
+previsao
+
+aggregate(vinho1, by=list(previsao), mean)
+
+ggpairs(cbind(vinho1, Cluster=as.factor(previsao)),
+        columns=1:13, aes(colour=Cluster, alpha=0.5),
+        lower=list(continuous="points"),
+        upper=list(continuous="blank"),
+        axisLabels="none", switch="both") +
+  theme_bw()
+
+plot(previsao)
+####
+library(cluster)
+clusplot(vinho,previsao, color = T, lines = F, labels = 5)
+table(vinho$Tipo,previsao)
