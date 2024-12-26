@@ -10,6 +10,8 @@ aprendizado de algoritmos de aprendizado de maquina
 - [Clusterização](#Clusterização)
   
     - [K-means](#K-means)
+ 
+    - [Fuzzy c-mean](#Fuzzy-c-means)
 ## Regras de associação
 ### Apriori
 O objetivo principal do Apriori é encontrar itens frequentemente comprados juntos e usar esses padrões para gerar regras de associação, que indicam as relações entre os itens. Essas regras são expressas na forma "se X, então Y", onde X e Y são conjuntos de itens.
@@ -57,6 +59,12 @@ Este é um dos mais simples e mais rápidos métodos de Clustering. Ele tenta se
 
 [Back to sumário](#Sumário)
 ### Fuzzy c-means
+Princípios de lógica difusa podem ser usados ​​para agrupar dados multidimensionais, atribuindo a cada ponto uma associação em cada centro de cluster de 0 a 100 por cento. Isso pode ser muito poderoso em comparação ao agrupamento tradicional de limite rígido, em que cada ponto recebe um rótulo nítido e exato. Esse algoritmo funciona atribuindo associação a cada ponto de dados correspondente a cada centro de cluster com base na distância entre o centro do cluster e o ponto de dados. Quanto mais os dados estiverem próximos do centro do cluster, mais sua associação será em relação ao centro de cluster específico. Claramente, a soma da associação de cada ponto de dados deve ser igual a um.
+
+
+No clustering fuzzy, cada ponto tem uma probabilidade de pertencer a cada cluster, em vez de pertencer completamente a apenas um cluster, como é o caso no k-means tradicional. No clustering Fuzzy-C Means, cada ponto tem uma ponderação associada a um cluster específico, então um ponto não fica “em um cluster” tanto quanto tem uma associação fraca ou forte ao cluster, que é determinada pela distância inversa ao centro do cluster.
+
+[Back to sumário](#Sumário)
 ### K-medoids
 ### DBSCAN
 ### Hierárquico
